@@ -1,6 +1,4 @@
 
-
-
 import 'package:product_list/domain/entities/product_entity.dart';
 
 class ProductModel extends ProductEntity {
