@@ -3,11 +3,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:product_list/presentation/splash/splash_screen.dart';
 import 'core/service/injection.dart';
+import 'data/data_source/local_data_source/shared_preferences_util.dart';
 import 'presentation/product/bloc/product_bloc.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await init();
+  await PrefUtils.init();
   runApp(const MyApp());
 }
 
